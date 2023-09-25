@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Tailwind</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script
+      defer
+      src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script
+      defer
+      src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+  </head>
+  <body class="bg-[#F6F6F6]">
+    <header
+      class="bg-transparent text-[#212121] fixed top-0 left-0 w-full flex items-center z-50 transition duration-700 ease-in-out">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4 flex items-center">
+            <!-- image -->
+            <img class="w-10 h-full" src="./img/logo17.png" alt="" />
+            <a
+              href="#home"
+              class="font-bold text-3xl text-primary block py-6 px-4 scroll-link">
+              KEARIFAN LOKAL
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden">
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none hidden">
+              <ul class="block lg:flex font-semibold">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-xl text-dark py-2 mx-8 flex group-hover:text-primary scroll-link"
+                    >ANGGOTA GRUP</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#video"
+                    class="text-xl text-dark py-2 mx-8 flex group-hover:text-primary scroll-link"
+                    >VIDEO PERJALANAN</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#listMateri"
+                    class="text-xl text-dark py-2 mx-8 flex group-hover:text-primary scroll-link"
+                    >LIST MATERI</a
+                  >
+                </li>
+                <!-- <li class="group">
+                  <a
+                    href="#tentang"
+                    class="text-xl text-dark py-2 mx-8 flex group-hover:text-primary scroll-link"
+                    >TENTANG</a
+                  >
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Anda di sini -->
+    <section id="home" class="py-32 static">
+      <div class="absolute top-[11%] left-[21%] transform z-20">
+        <h2 class="text-4xl font-bold bg-[#6D9886] p-2 rounded-xl">
+          ANGGOTA GRUP
+        </h2>
+      </div>
+      <div class="container mx-auto">
+        <div
+          id="indicators-carousel"
+          class="relative w-full h-full overflow-hidden rounded-lg bg-[#D9CAB3]"
+          data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div
+            class="flex items-stretch relative overflow-hidden rounded-lg h-[800px]">
+            <!-- Item 1 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item="active">
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    M Gati Djatmiko
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Arsitektur
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="float-right relative z-20"
+                      src="./img/2.png"
+                      alt="Gambar Carousel"
+                      width="505px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Riham Rahmadi Suprapioyo
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Konversi Alam
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative pt-20">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/3.png"
+                      alt="Gambar Carousel"
+                      width="560px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG2.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Ajeng alifa fashaya
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Kerajinan
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/10.png"
+                      alt="Gambar Carousel"
+                      width="520px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG3.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Wulan Rahmania
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Kesenian
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/6.png"
+                      alt="Gambar Carousel"
+                      width="510px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    katarina Ayuni Lestari
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">Unsur Sosial</p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/9.png"
+                      alt="Gambar Carousel"
+                      width="450px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG2.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Azzahra Egandara Putri
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">Unsur Sosial</p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/5.png"
+                      alt="Gambar Carousel"
+                      width="440px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG3.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Hana Khoirunnisa
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Tradisi/Adat
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/12.png"
+                      alt="Gambar Carousel"
+                      width="530px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 8 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Shafira Aulia
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">Unsur Ritual</p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/4.png"
+                      alt="Gambar Carousel"
+                      width="550px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG2.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 9 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Nursipa
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">Unsur Ritual</p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/8.png"
+                      alt="Gambar Carousel"
+                      width="440px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG3.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 10 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Aura Putri Rahma Sari
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Obat Obatan
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/11.png"
+                      alt="Gambar Carousel"
+                      width="570px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 11 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch justify-center">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Luthfie Ahmad Fahlevi
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Mitigasi
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="flex float-right relative z-20 left-0"
+                      src="./img/7.png"
+                      alt="Gambar Carousel"
+                      width="600px" />
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG2.png"
+                      alt="Workplace"
+                      width="500px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 12 -->
+            <div
+              class="hidden duration-300 ease-linear py-24"
+              data-carousel-item>
+              <div class="flex items-stretch">
+                <div class="self-center md:w-1/2">
+                  <h2
+                    class="text-6xl font-bold mb-4 text-center text-[#212121]">
+                    Daffa Yudia Pratama
+                  </h2>
+                  <p class="text[#212121] text-center text-2xl">
+                    Unsur Konversi Alam
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                  <div class="flex justify-center items-center">
+                    <!-- Tambahkan div penengah -->
+                    <img
+                      class="z-10 absolute top-auto bottom-0"
+                      src="./img/BG3.png"
+                      alt="Workplace"
+                      width="500px" />
+                    <img
+                      class="float-right relative z-10"
+                      src="./img/1.png"
+                      alt="Gambar Carousel"
+                      width="750px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="3"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="4"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="5"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="6"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="7"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="8"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="9"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="10"></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="11"></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg
+                class="w-4 h-4 text-[#212121] dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10">
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg
+                class="w-4 h-4 text-[#212121] dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10">
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="pt-20">
+      <div class="bg-[#6D9886] h-screen rounded-lg">
+        <h1 class="text-center text-6xl font-bold pt-16 text-[#212121]">
+          VIDEO PERJALANAN
+        </h1>
+        <div class="container mx-auto flex justify-center items-center pt-10">
+          <!-- judul video -->
+          <div class="aspect-video">
+            <iframe
+              class="w-[1100px] h-[650px] rounded-xl"
+              src="https://www.youtube.com/embed/ZBMd8ZzT6pA?si=nKdUO7b9f70DJi1M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="listMateri" class="pt-20 mb-11">
+      <!-- component -->
+      <h1 class="text-center text-6xl mt-10 font-bold">LIST MATERI</h1>
+      <div class="container mx-auto mt-4 bg-[#D9CAB3] rounded-xl">
+        <div
+          class="flex flex-col md:grid grid-cols-9 mx-auto p-8 text-[#F6F6F6]">
+          <!-- 1. unsur arsitektur -->
+          <div class="flex flex-row-reverse md:contents">
+            <div
+              class="bg-[#6D9886] col-start-1 col-end-5 rounded-xl flex my-4 shadow-md text-justify">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="
+                  background-image: url('./img/materi/arsitektur.jpeg');
+                "></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">1. Unsur Arsitektur</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Saung Lisung adalah tempat membuat padi menjadi beras yg
+                    terbuat dari rotan,bambu,dan kayu...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal1"
+                      data-modal-toggle="large-modal1">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-[#212121] pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#6D9886] shadow"></div>
+            </div>
+            <!-- 2. Unsur ketahanan pangan -->
+            <div
+              class="bg-[#6D9886] flex col-start-6 col-end-10 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="background-image: url('./img/materi/pangan.jpg')"></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">
+                  2. Unsur Ketahanan Pangan
+                </h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Secara keseluruhan, di Kampung Naga, tanaman padi
+                    mendominasi dalam aspek ketahanan pangan. Padi dianggap
+                    sebagai kebutuhan...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal2"
+                      data-modal-toggle="large-modal2">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 3. Unsur Kerajinan -->
+          <div class="flex flex-row-reverse md:contents">
+            <div
+              class="bg-[#6D9886] col-start-1 col-end-5 rounded-xl flex my-4 shadow-md text-justify">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="
+                  background-image: url('./img/materi/kerajinan.jpeg');
+                "></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">3. Unsur Kerajinan</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Kerajinan atau kriya adalah hobi atau pekerjaan yang
+                    membutuhkan kemampuan dan pengetahuan tertentu untuk
+                    menciptakan karya...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal3"
+                      data-modal-toggle="large-modal3">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-[#212121] pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#6D9886] shadow"></div>
+            </div>
+            <!-- 4. Unsur Kesenian -->
+            <div
+              class="bg-[#6D9886] flex col-start-6 col-end-10 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="
+                  background-image: url('./img/materi/kesenian.jpeg');
+                "></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">4. Unsur Kesenian</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Kesenian merupakan sarana yang digunakan suatu kelompok
+                    tertentu untuk mengekspresikan suatu budaya atau ciri khas
+                    dari suatu budaya tersebut...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal4"
+                      data-modal-toggle="large-modal4">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 5. Unsur Sosial -->
+          <div class="flex flex-row-reverse md:contents">
+            <div
+              class="bg-[#6D9886] flex col-start-1 col-end-5 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="background-image: url('./img/materi/sosial.jpg')"></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">5. Unsur Sosial</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Masyarakat hukum adat dan masyarakat adat adalah istilah
+                    yang membedakan perspektif akademis dan non-akademis terkait
+                    komunitas...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal5"
+                      data-modal-toggle="large-modal5">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-[#212121] pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#6D9886] shadow"></div>
+            </div>
+            <!-- 6. Unsur Tradisi -->
+            <div
+              class="bg-[#6D9886] flex col-start-6 col-end-10 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="
+                  background-image: url('./img/materi/tradisi.jpeg');
+                "></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">6. Unsur Tradisi</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Kampung Naga merupakan suatu perkampungan yang didiami oleh
+                    sekelompok masyarakat yang sangat kuat dalam memegang adat
+                    istiadat...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal6"
+                      data-modal-toggle="large-modal6">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 7. Unsur Ritual -->
+          <div class="flex flex-row-reverse md:contents">
+            <div
+              class="bg-[#6D9886] flex col-start-1 col-end-5 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="background-image: url('./img/materi/ritual.jpeg')"></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">7. Unsur Ritual</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Upacara Adat / Ritual merupakan suatu kewajiban bagi
+                    masyarakat Kampung Naga dalam upaya untuk melestarikan
+                    tradisi yang selama...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal7"
+                      data-modal-toggle="large-modal7">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-[#212121] pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#6D9886] shadow"></div>
+            </div>
+            <!-- 8. Unsur Obat Obatan -->
+            <div
+              class="bg-[#6D9886] flex col-start-6 col-end-10 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="background-image: url('./img/materi/obat.jpg')"></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">8. Unsur Obat Obatan</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Orang di kampung naga meracik obat untuk penyakit meriang
+                    atau panas dingin menggunakan bahan yang ditemukan di alam,
+                    antara lain...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal8"
+                      data-modal-toggle="large-modal8">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 9. Unsur Mitigasi -->
+          <div class="flex flex-row-reverse md:contents">
+            <div
+              class="bg-[#6D9886] flex col-start-1 col-end-5 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="
+                  background-image: url('./img/materi/mitigasi.jpg');
+                "></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">9. Unsur Mitigasi</h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Kabupaten Tasikmalaya yang masih memiliki masyarakat Kampung
+                    Naga harus mampu melestarikan setiap kearifan lokal...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal9"
+                      data-modal-toggle="large-modal9">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-[#212121] pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#6D9886] shadow"></div>
+            </div>
+            <!-- 8. Unsur Konservasi Alam -->
+            <div
+              class="bg-[#6D9886] flex col-start-6 col-end-10 rounded-xl my-4 shadow-md">
+              <div
+                class="w-1/3 bg-cover rounded-xl"
+                style="background-image: url('./img/materi/alam.jpg')"></div>
+              <div class="w-2/3 p-3">
+                <h3 class="font-bold text-2xl mb-2">
+                  10. Unsur Konservasi Alam
+                </h3>
+                <ul class="text-justify space-y-2">
+                  <li class="flex items-center text-lg">
+                    Masyakat kampung naga tidak memiliki kebijakan tertulis
+                    dalam hal mempertahankan alam mereka, tapi dari kesadaran
+                    diri sendiri (lisan ke lisan)...
+                  </li>
+                  <li class="list-none">
+                    <button
+                      class="bg-white text-[#212121] font-semibold hover:bg-blue-100 text-md mt-3 px-3 py-1 rounded-full float-right shadow-lg"
+                      data-modal-target="large-modal10"
+                      data-modal-toggle="large-modal10">
+                      Lanjut Baca
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian MOdal -->
+    <section>
+      <!-- Large Modal 1 -->
+      <div
+        id="large-modal1"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                1. Unsur Arsitektur
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal1">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify">
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Saung Lisung adalah tempat membuat padi menjadi beras yg
+                  terbuat dari rotan, bambu, dan kayu
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Rumah dibuat panggung karena memang ciri khas sunda
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Posisi rumah saling berhadapan/membelakangi dgn posisi jendela
+                  yg menghadap ke utara dan pintu menghadap selatan
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Pembuatan rumah bagian dapur dibuat dgn anyam sasangkir yang
+                  berfungsi untuk mengetahui apabila tuan rumah sdg memasak
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Satu rumah terdiri dari bagian depan yaitu dapur dan ruang
+                  tamu dan belakang terdiri dari kamar tidur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal 2 -->
+      <div
+        id="large-modal2"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                2. Unsur Ketahanan Pangan
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal2">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify">
+                <li class="flex items-center text-xl">
+                  Secara keseluruhan, di Kampung Naga, tanaman padi mendominasi
+                  dalam aspek ketahanan pangan. Padi dianggap sebagai kebutuhan
+                  utama yang sangat penting bagi kelangsungan hidup penduduk.
+                  Tanaman sayuran tumbuh di lahan kosong, namun prioritas utama
+                  tetap pada padi. Panen padi dilakukan dua kali setahun pada
+                  bulan Januari dan Juli, dengan menggunakan varietas padi
+                  tradisional yang berumur 4-5 bulan. Hasil panen disimpan dalam
+                  dua lumbung padi, yaitu lumbung padi umum dan lumbung padi
+                  perindividu/keluarga. Sebagian hasil panen disisihkan untuk
+                  disimpan di lumbung umum, sementara sisanya dapat dikonsumsi
+                  oleh penduduk sebelum dijual kepada masyarakat.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Large Modal 3 -->
+      <div
+        id="large-modal3"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                3. Unsur Kerajinan
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal3">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Pengertian Kerajinan
+                </li>
+                <li class="flex items-center text-xl">
+                  Kerajinan atau kriya adalah hobi atau pekerjaan yang
+                  membutuhkan kemampuan dan pengetahuan tertentu untuk
+                  menciptakan karya secara terampil. Orang yang menggeluti
+                  bidang ini disebut perajin atau pengrajin.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Fungsi Kerajinan
+                </li>
+                <li class="flex items-center text-xl">
+                  Fungsi dari kerajinan adalah sebagai media ekspresi seni dan
+                  budaya, serta sebagai sarana untuk memperoleh penghasilan bagi
+                  masyarakat yang menggeluti bidang kerajinan.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Gambaran Umum
+                </li>
+                <li class="flex items-center text-xl">
+                  Kampung naga memiliki lahan pohon yang sangat luas. Salah satu
+                  contoh pohonnya yaitu pohon bambu. Pohon bambu tersebut
+                  dijadikan sebagai bahan baku untuk mata pencaharian kedua
+                  setelah petani oleh masyarakat setempat di kampung naga dengan
+                  dijadikan sebagai kerajinan.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Contoh Kerajinan
+                </li>
+                <div class="w-full flex">
+                  <div class="w-1/2">
+                    <li class="flex items-center text-xl">• Boboko</li>
+                    <li class="flex items-center text-xl">• Nyiru</li>
+                    <li class="flex items-center text-xl">• Tolombong</li>
+                    <li class="flex items-center text-xl">• Dulang</li>
+                    <li class="flex items-center text-xl">• Koja</li>
+                    <li class="flex items-center text-xl">• Topi Anyam</li>
+                    <li class="flex items-center text-xl">• Besek Bambu</li>
+                  </div>
+                  <div class="w-1/2">
+                    <li class="flex items-center text-xl">• Gelang</li>
+                    <li class="flex items-center text-xl">• Sendal Anyam</li>
+                    <li class="flex items-center text-xl">• Aseupan</li>
+                    <li class="flex items-center text-xl">• Seeng</li>
+                    <li class="flex items-center text-xl">• Hihid</li>
+                    <li class="flex items-center text-xl">• Dandang</li>
+                    <li class="flex items-center text-xl">
+                      • Gelas Batok Kelapa
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Large Modal 4 -->
+      <div
+        id="large-modal4"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                4. Unsur Kesenian
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal4">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  Kesenian merupakan sarana yang digunakan suatu kelompok
+                  tertentu untuk mengekspresikan suatu budaya atau ciri khas
+                  dari suatu budaya tersebut. Di kampung Naga sendiri ada banyak
+                  Kesenian yang sudah menjadi ciri khas , misalnya ada tiga alat
+                  musik yang sering di mainkan di kampung Naga yang diantaranya:
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Terbang gembrung
+                </li>
+                <li class="flex items-center text-xl">
+                  Terbang Gembrung alat musik yang mirip dengan gendang, cara
+                  memainkan Kesenian ini adalah dengan cara dipukul. Kesenian
+                  ini bisa dimainkan oleh banyak orang. Kesenian ini bersifat
+                  religi atau keagamaan karena selalu ditampilkan pada saat hari
+                  besar Islam seperti Idul Fitri, Idul Adha, Ramadhan, maupun
+                  Maulud Nabi.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Terbang Sejak
+                </li>
+                <li class="flex items-center text-xl">
+                  merupakan Kesenian hiburan yang bisa kapan saja bisa digelar,
+                  tidak hanya di tampilkan di waktu tertentu saja, isinya bebas,
+                  bisa dikolaborasikan dengan lagu-lagu Sunda dan diiringi
+                  dengan tarian yang biasa ditampilkan pada kegiatan syukuran
+                  atau hiburan warga Kampung Naga. Terbang sejak memiliki
+                  kemiripan dengan Terbang Gembrung hanya saja ukurannya lebih
+                  kecil, cara memainkannya pun sama-sama dipukul.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Angklung
+                </li>
+                <li class="flex items-center text-xl">
+                  Angklung atau alat musik dari bambu yang sampai saat ini masih
+                  terus dipertahankan warga adat Kampung Naga dalam menggelar
+                  kegiatan-kegiatan adat di kampungnya. Angklung biasa
+                  dipentaskan di acara ritual juga, seperti hajatan, atau
+                  sunatan. Kesenian ini bisa dimainkan oleh siapa saja dan
+                  dimainkan dengan cara digoyangkan.
+                </li>
+                <li class="flex items-center text-xl">
+                  Selain dari tiga Kesenian tersebut masih ada dua Kesenian lagi
+                  yaitu:
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  karinding
+                </li>
+                <li class="flex items-center text-xl">
+                  karinding adalah kesenian asli buatan kampung naga yang
+                  terbuat dari pelepah daun kawung (Enau) atau bilahan bambu
+                  kecil. Karinding biasa dipakai oleh petani untuk mengusir
+                  hama. alat musik ini dimainkan dengan cara di tiup sembari
+                  dipukul² oleh tangan.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Celempung
+                </li>
+                <li class="flex items-center text-xl">
+                  Celempung adalah alat musik kampung Naga yang berasal dari
+                  Jawa barat. Celempung yang ada dikampung Naga berbahan dasar
+                  bambu. Celempung termasuk Kesenian yang dimainkan dipukul.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal 5 -->
+      <div
+        id="large-modal5"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                5. Unsur Sosial
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal5">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Aturan hukum
+                </li>
+                <li class="flex items-center text-xl">
+                  Masyarakat hukum adat dan masyarakat adat adalah istilah yang
+                  membedakan perspektif akademis dan non-akademis terkait
+                  komunitas dengan tradisi dan hukum adat. Istilah «masyarakat
+                  adat» digunakan dalam bahasa sehari-hari dan mengacu pada
+                  kesepakatan internasional tentang kelompok asli. Masyarakat
+                  hukum adat adalah kelompok terorganisir dengan aturan,
+                  kepemimpinan, dan hubungan kuat dengan tanah serta sumber daya
+                  alam, seperti yang ditemukan di Indonesia. Sistem pemerintahan
+                  masyarakat Kampung Naga ada 2 lembaga yaitu:
+                </li>
+                <div class="w-full flex">
+                  <div class="w-1/2">
+                    <li class="flex items-center text-xl">
+                      <i class="fa-solid fa-check fa-lg mr-2"></i>
+                      Lembaga Pemerintahan
+                    </li>
+                    <li class="flex items-center text-xl">• RT</li>
+                    <li class="flex items-center text-xl">• RK/RW</li>
+                    <li class="flex items-center text-xl">
+                      • Kudus (Kepala Dusun)
+                    </li>
+                  </div>
+                  <div class="w-1/2">
+                    <li class="flex items-center text-xl">
+                      <i class="fa-solid fa-check fa-lg mr-2"></i>
+                      Lembaga Adat
+                    </li>
+                    <li class="flex items-center text-xl">
+                      • Kuncen dijabat oleh bapak Ade Suherlin yang bertugas
+                      sebagai pemangku adat dan memimpin upacara adat dalam
+                      beriarah.
+                    </li>
+                    <li class="flex items-center text-xl">
+                      • Punduh dijabat oleh bapak Ma’mun.
+                    </li>
+                    <li class="flex items-center text-xl">
+                      • Lebe dijabat oleh bapak Ateng yang bertugas mengurusi
+                      jenazah dari awal sampai akhir sesuai dengan syariat
+                      Islam.
+                    </li>
+                  </div>
+                </div>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Sistem bahasa
+                </li>
+                <li class="flex items-center text-xl">
+                  Mayoritas masyarakat Kampung Naga menggunakan bahasa Sunda,
+                  kecuali di pemerintahan. Bahasa Indonesia digunakan terutama
+                  saat berkomunikasi dengan wisatawan non-Jawa Barat.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Sistem Pendidikan
+                </li>
+                <li class="flex items-center text-xl">
+                  Mayoritas pendidikan di Kampung Naga hanya sampai Sekolah
+                  Dasar. Minoritas melanjutkan ke jenjang lebih tinggi. Pola
+                  pikir mayoritas cenderung merendah, menganggap pengalaman dan
+                  pembelajaran dari alam lebih baik daripada sekolah tinggi.
+                  Aktivitas belajar umumnya dilakukan di masjid atau aula.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Sistem Kepercayaan
+                </li>
+                <li class="flex items-center text-xl">
+                  Penduduk Kampung Naga mayoritas Islam tapi tetap memegang adat
+                  dan kepercayaan nenek moyang. Menghormati leluhur dengan
+                  menjalankan adat. Pelanggaran adat dianggap tabu dan dapat
+                  menimbulkan malapetaka.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal 6 -->
+      <div
+        id="large-modal6"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                6. Unsur Tradisi
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal6">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  Kampung Naga merupakan suatu perkampungan yang didiami oleh
+                  sekelompok masyarakat yang sangat kuat dalam memegang adat
+                  istiadat peninggalan leluhurnya. adat istiadat menjadi
+                  falsafah hidup yang terangkum pada empat tradisi yaitu Wasiat
+                  amanat larangan dan akibat Salah satu tradisi di Kampung Naga
+                  yang sampai saat ini masih tetap terjaga kelestariannya adalah
+                  tradisi Hajat Sasih.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Hajat Sasih
+                </li>
+                <li class="flex items-center text-xl">
+                  Merupakan tradisi upacara adat yang dilakukan oleh masyarakat
+                  di kampung adat dan pelaksanaannya dalam setahun dilakukan
+                  sebanyak enam kali
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Tabu
+                </li>
+                <li class="flex items-center text-xl">
+                  yang kedua ada upacara menyepi atau di sebut dengan tabu,
+                  dilakukan oleh masyarakat Kampung Naga pada hari selasa, rabu,
+                  dan hari sabtu. Menurut pandangan masyarakat sekitar upacara
+                  ini sangat penting dan wajib dilaksanakan, tanpa kecuali baik
+                  laki-laki maupun perempuan. Pelaksanaan upacara tabu merupakan
+                  bentuk kepatuhan warga Kampung Naga terhadap aturan adat,
+                  penghormatan kepada leluhur, juga untuk menjaga amanat dan
+                  wasiat yang bila dilanggar dikhawatirkan akan menimbulkan
+                  malapetaka, pada upacara tabu ini dilarang melakukan upacara
+                  upacara lain dan juga dalam berinteraksi tidak dibatasi
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal 7 -->
+      <div
+        id="large-modal7"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                7. Unsur Ritual
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal7">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Pengertian Ritual
+                </li>
+                <li class="flex items-center text-xl">
+                  Upacara Adat / Ritual merupakan suatu kewajiban bagi
+                  masyarakat Kampung Naga dalam upaya untuk melestarikan tradisi
+                  yang selama ini telah mereka warisi dari para leluhur atau
+                  sebagai cikal bakal. Juga sebagai sarana mendekatkan kembali
+                  saudaranya yang telah meninggalkan Kampung Naga dan menempati
+                  tempat lain. Ritual dipimpin oleh pemimpin adat, ritual yang
+                  dilakukan setaun sekali yaitu ngariwayat lembur, ada juga
+                  ritual per keluarga, saat memanen padi atau memanam padi.
+                  Empat kali setahun, masyarakat setempat menggelar ritual hajat
+                  sasih. Penggelaran ritual itu bertujuan memohon berkah dan
+                  keselamatan kepada leluhur Kampung Naga dan ungkapan syukur
+                  kepada Tuhan Yang Esa atas segala nikmat-Nya. Penentuan
+                  waktunya berkaitan erat dengan tradisi Islam, yaitu Muharam
+                  (26, 27, atau 28), Maulud (12, 13, atau 14), Jumadilakhir (16,
+                  17, atau 18), Syakban (14, 15, atau 16), Syawal (1, 2, atau
+                  3), dan Rayagung/Zulhijah (10, 11, atau 12). Salah satu dari
+                  tanggal itu dipilih sebagai pelaksanaan hajat sasih. Tanggal
+                  yang dipilih adalah yang tidak bertepatan dengan "hari nyepi"
+                  warga Sanaga, yaitu selain Selasa, Rabu, atau Sabtu.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal 8 -->
+      <div
+        id="large-modal8"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                8. Unsur Obat obatan
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal8">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Orang di kampung naga meracik obat untuk penyakit meriang atau
+                  panas dingin menggunakan bahan yang ditemukan di alam, antara
+                  lain jahe merah, kunyit, sereh, dan madu, lalu semua komposisi
+                  tsb di rebus dan diminum
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Selain untuk bungkus (kertas) rokok, daun kawung juga bisa
+                  dimanfaatkan sebagai obat, dimana daun direbus lalu air
+                  rebusan diminum
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Untuk ibu hamil, saat sudah melahirkan disarankan menggunakan
+                  bengkung atau bebengkung (semacam korset/gurita) agar perut
+                  bagus lagi atau kembali seperti semula
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Luhur urat itu adalah semacam penyakit asam urat dan dapat
+                  diobati dengan obat tradisional seperti ketan hitam, jahe,
+                  laja, suliha, bawang merah, katumpang dan kerastulang
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal 9 -->
+      <div
+        id="large-modal9"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                9. Unsur Mitigasi
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal9">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  Kabupaten Tasikmalaya yang masih memiliki masyarakat Kampung
+                  Naga harus mampu melestarikan setiap kearifan lokal yang ada
+                  terutama terkait mitigasi bencana. Bentuk kearifan lokal dalam
+                  mitigasi bencana tersebut diantaranya adalah, untuk bencana
+                  gempa bumi diminimalisir oleh penggunaan material rumah yang
+                  dominan dari bambu dan memakai sistem rumah panggung dengan
+                  batu tatapakan di bawah untuk meredam getaran. Pada bencana
+                  tanah longsor, di tanah yang miring disiasati dengan cara
+                  diteras-teras menggunakan penahan batu atau batu umpak.
+                  Sedangkan untuk bencana kebakaran, memakai metode penggunaan
+                  sistem anyaman bilik yang berbeda-beda setiap ruangan untuk
+                  meminimalisir munculnya api biar bisa terdeteksi dari luar
+                  rumah, terutama memakai anyaman bilik sasag untuk ruangan
+                  dapur. Kearifan lokal tersebut tentunya dapat diadaptasi oleh
+                  masyarakat pada umumnya untuk meminimalisir dampak kerugian
+                  baik harta benda ataupun korban jiwa pada saat terjadinya
+                  bencana.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal 10 -->
+      <div
+        id="large-modal10"
+        tabindex="-1"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-opacity">
+        <div class="relative w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-[#6D9886] rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-3xl font-bold text-[#F6F6F6] dark:text-white">
+                10. Unsur Konversi Alam
+              </h3>
+              <button
+                type="button"
+                class="text-[#212121] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="large-modal10">
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 font-normal text-[#F6F6F6]">
+              <ul class="list-disc space-y-4 text-justify w-full">
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Masyakat kampung naga tidak memiliki kebijakan tertulis dalam
+                  hal mempertahankan alam mereka, tapi dari kesadaran diri
+                  sendiri (lisan ke lisan)
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Masyarakat meyakini bahwa menjaga alam itu suatu keharusan yg
+                  diturunkan dari nenek moyang mereka.
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Memiliki prinsip "dari alam kembali ke alam" jadi apapun yg
+                  mereka buat contohnya rumah materialnya dari alam agar tidak
+                  merusak lingkungan
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Dalam penanganan sampah, setiap rumah memiliki satu tempat
+                  sampah berbentuk seperti corong yg kemudian sampah tersebut di
+                  bakar di suatu tempat
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Tidak khawatir akan pencahayaan di malam hari, karena
+                  menggunakan minyak untuk penerangan
+                </li>
+                <li class="flex items-center text-xl">
+                  <i class="fa-solid fa-circle-check fa-lg mr-2"></i>
+                  Kehidupan Berkelanjutan: Masyarakat Kampung Naga hidup dengan
+                  prinsip keberlanjutan, mengandalkan sumber daya alam setempat
+                  tanpa merusaknya. Mereka menjaga keseimbangan alam dengan cara
+                  memanfaatkan sumber daya secara bijaksana.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="tentang" class="h-screen">
+      <div class="container"></div>
+    </section> -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".scroll-link").on("click", function (event) {
+          event.preventDefault();
+
+          var target = $(this).attr("href"); // Dapatkan nilai href dari tautan
+          var targetOffset = $(target).offset().top; // Dapatkan posisi offset target
+
+          // Animasikan scroll ke posisi target dengan durasi 500ms (sesuaikan dengan kebutuhan Anda)
+          $("html, body").animate(
+            {
+              scrollTop: targetOffset,
+            },
+            500
+          );
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerButton = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+
+        hamburgerButton.addEventListener("click", function () {
+          navMenu.classList.toggle("hidden");
+        });
+
+        // Jika ukuran layar lebih dari atau sama dengan lg (tailwindcss menggunakan md: untuk ukuran md)
+        // maka pastikan menu ditampilkan
+        if (window.innerWidth >= 1024) {
+          navMenu.classList.remove("hidden");
+        }
+
+        // Jika ukuran layar berubah, cek kembali
+        window.addEventListener("resize", function () {
+          if (window.innerWidth >= 1024) {
+            navMenu.classList.remove("hidden");
+          } else {
+            navMenu.classList.add("hidden");
+          }
+        });
+      });
+    </script>
+    <script>
+      const navbar = document.querySelector("header");
+      window.addEventListener("scroll", () => {
+        // Tentukan posisi top dari halaman
+        const scrollPosition = window.scrollY;
+
+        // Tentukan aturan untuk mengubah warna navbar
+        if (scrollPosition > 20) {
+          navbar.classList.add("bg-[#212121]"); // Ganti dengan warna yang Anda inginkan
+          navbar.classList.remove("bg-transparent");
+          navbar.classList.remove("text-[#212121]");
+          navbar.classList.add("text-[#F6F6F6]");
+        } else {
+          navbar.classList.remove("bg-[#212121]");
+          navbar.classList.add("bg-transparent");
+          navbar.classList.remove("text-[#F6F6F6]");
+          navbar.classList.add("text-[#212121]");
+        }
+      });
+    </script>
+  </body>
+</html>
